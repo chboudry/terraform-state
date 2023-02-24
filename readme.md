@@ -11,11 +11,11 @@ Simple example to demonstrate the code syntax to split and reuse state between p
 1. Locally, run `az login`
 
 1. Go on folder project core and run :
-- terraform init --backend-config=backend.conf
+- terraform init --backend-config=core_backend.conf
 - terraform apply
 
 4. then go on folder project lz and run :
-- terraform init 
+- terraform init --backend-config=lz_backend.conf
 - terraform apply
 
 ## Improvements to consider for production 
